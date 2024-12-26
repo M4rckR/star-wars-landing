@@ -103,7 +103,7 @@ document.addEventListener("DOMContentLoaded", () => {
         carouselInner.innerHTML += `
             <div class="carousel-item py-4 px-1 ${index === 0 ? "active" : ""}">
               <div class="d-md-flex gap-4">${cardsHTML}</div>
-            </div>`;
+            </div>`;x
       });
 
 
@@ -111,7 +111,7 @@ document.addEventListener("DOMContentLoaded", () => {
       // Cargar carrusel móvil
       totalPersonajes.forEach((char, index) => {
         carouselInnerMobile.innerHTML += `
-            <div class="carousel-item ${index === 0 ? "active" : ""}">
+            <div class="carousel-item py-4 px-1  ${index === 0 ? "active" : ""}">
               <div class="card-mobile-item mx-auto card bg-dark text-white flex-grow-1">   
                 <img
                   class="imagen-card card-img"
