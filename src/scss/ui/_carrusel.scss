@@ -16,9 +16,16 @@
         .imagen-card{
             height: 30rem;
             object-fit: cover;
+            object-position: top;
         }
     
     
+    }
+
+    .card-img-mobile {
+        height: 28rem;
+        object-fit: cover;
+        object-position: top;
     }
     
     .carrusel-mobile {

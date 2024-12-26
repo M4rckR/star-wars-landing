@@ -103,7 +103,7 @@ document.addEventListener("DOMContentLoaded", () => {
         carouselInner.innerHTML += `
             <div class="carousel-item py-4 px-1 ${index === 0 ? "active" : ""}">
               <div class="d-md-flex gap-4">${cardsHTML}</div>
-            </div>`;x
+            </div>`
       });
 
 
@@ -114,7 +114,7 @@ document.addEventListener("DOMContentLoaded", () => {
             <div class="carousel-item py-4 px-1  ${index === 0 ? "active" : ""}">
               <div class="card-mobile-item mx-auto card bg-dark text-white flex-grow-1">   
                 <img
-                  class="imagen-card card-img"
+                  class="imagen-card card-img card-img-mobile"
                   src="https://starwars-visualguide.com/assets/img/characters/${IDpersonaje(
                     char.url
                   )}.jpg"
