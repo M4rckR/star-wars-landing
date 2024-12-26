@@ -1,0 +1,55 @@
+// Colores
+$humo : #f8f8f8;
+$oscuro: #000000;
+$amarillo: #ffcc00;
+
+$min-contrast-ratio: 2.5;
+
+
+// Font face
+@font-face {
+    font-family: 'Star Jedi';
+    src: url('../fonts/Starjedi.ttf');
+}
+
+
+// SObre escribir colores
+$primary: $amarillo;
+$white : $humo;
+
+
+// Fuentes
+$font-size-root: 62.5%;
+$font-size-base: 1.6rem;
+$nav-link-font-weight: 700;
+$font-family-base:  "Raleway", serif;
+$headings-font-family: 'Star Jedi', serif;
+
+
+
+// Dropdown
+$dropdown-link-hover-bg:  $oscuro;
+$dropdown-link-hover-color: $amarillo;
+$dropdown-link-active-bg:  $oscuro;
+$dropdown-link-active-color: $amarillo;
+$dropdown-padding-y:  0;
+$dropdown-item-padding-y: .8rem;
+$dropdown-item-padding-x: .8rem;
+
+
+// Navbar
+$navbar-dark-toggler-border-color: transparent;
+
+$nav-link-color:  $humo;
+$nav-link-hover-color:  $amarillo;
+
+
+//Tipografia
+$h1-font-size: 4.8rem;
+$h2-font-size: 2.8rem;
+$h3-font-size: 2.4rem;
+
+
+
+// Importar todo bootstrap
+@import '../../node_modules/bootstrap/scss/bootstrap.scss';

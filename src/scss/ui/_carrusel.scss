@@ -1,0 +1,40 @@
+@use '../custom' as *;
+@use '../mixins' as m;
+
+
+
+.carrusel {
+    padding-bottom: 3rem;
+
+    @include media-breakpoint-up(md) {
+        padding-bottom: 6rem;
+    }
+
+    .carrusel-principal {
+        padding: 6rem 0 0 0;
+    
+        .imagen-card{
+            height: 30rem;
+            object-fit: cover;
+        }
+    
+    
+    }
+    
+    .carrusel-mobile {
+        .card-mobile-item {
+            max-width: 33rem;
+        }
+    }
+
+    .card {
+        transition: transform 0.3s ease, box-shadow 0.3s ease;
+        cursor: pointer;
+    }
+    
+    .card:hover {
+        transform: scale(1.03);
+        box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+    }
+}
+

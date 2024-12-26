@@ -1,0 +1,23 @@
+@use '../custom' as *;
+@use '../mixins' as m;
+
+.footer {
+
+    &-box {
+        padding: 6rem 0 0 0;
+    }
+
+    a {
+        color: white;
+        text-decoration: none;
+
+    }
+
+
+    .ico-social {
+        transition:color .25s; ;
+        &:hover {
+            color: $amarillo !important;
+        }
+    }
+}

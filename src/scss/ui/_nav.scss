@@ -1,0 +1,27 @@
+@use '../custom' as *;
+@use '../mixins' as m;
+
+
+body {
+    scroll-behavior: smooth;
+}
+
+.header {
+    .logo {
+        width: 12rem;
+    }
+
+    .enlace-nav {
+        font-size: 1.8rem;
+    }
+
+    .sub-line {
+        transition: all 0.3s;
+        &::after{
+            @include m.borderNavBottom($amarillo);
+            &:hover {
+                transform: scale(1.1);
+            }
+        }
+    }
+}

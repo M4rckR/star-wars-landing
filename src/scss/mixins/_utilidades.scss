@@ -1,0 +1,8 @@
+
+@mixin borderNavBottom($color) {
+  content: '';
+  display: block;
+  width: 100%;
+  height: 0.2rem;
+  background-color: $color;
+}

@@ -1,0 +1,15 @@
+@use '../custom' as *;
+@use '../mixins' as m;
+
+
+.hero-full-image {
+    background-image: url('../img/hero-full.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    padding: 12rem 0;
+
+    @include media-breakpoint-up(lg) {
+        padding: 24rem 0;
+    }
+}

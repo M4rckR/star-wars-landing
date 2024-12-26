@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>StarVerse</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link rel="icon" href="src/img/icon.png">
+    <link rel="stylesheet" href="./src/scss/app.scss">
+    <link rel="stylesheet" href="./node_modules/bootstrap-icons/font/bootstrap-icons.min.css">
+</head>
+<body class="overflow-x-hidden">
+    
+    <nav class="navbar navbar-expand-md navbar-dark  fixed-top bg-dark py-4">
+        <div class="container-xl rounded">
+          <a class="navbar-brand me-auto m-0" href="#">
+            <h3 class="ps-2 ps-md-0">Starverse</h3>
+          </a>
+
+          <div class="offcanvas offcanvas-end text-bg-dark p-5 p-md-0" tabindex="-1" id="offcanvasDarkNavbar" aria-labelledby="offcanvasDarkNavbarLabel">
+            <div class="offcanvas-header">
+              <h3 class="offcanvas-title" id="offcanvasDarkNavbarLabel">StarVerse</h3>
+              <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+            </div>
+            <div class="offcanvas-body">
+              <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+                <li class="nav-item">
+                  <a class="nav-link mx-lg-2" aria-current="page" href="#inicio">Inicio</a>
+                </li>
+                <li class="nav-item dropdown">
+                  <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                    Secciones
+                  </a>
+                  <ul class="dropdown-menu dropdown-menu-dark">
+                    <li><a class="dropdown-item" href="#mural">Mural</a></li>
+                    <li><a class="dropdown-item" href="#historia">Historia</a></li>
+                    
+                  </ul>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link mx-lg-2" href="#personajes">Personajes</a>
+                </li>
+                
+                <li>
+                  <a class="btn btn-strong rounded me-2 d-block d-md-none mt-4 mt-md-0" href="#suscripcion">Suscribete</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+
+          <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasDarkNavbar" aria-controls="offcanvasDarkNavbar" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+        </div>
+      </nav>
+      
+      <section class="hero d-flex justify-content-center align-items-center">
+        <div class="container-xl py-5">
+            <div class="row align-items-center py-5 g-5">
+              <div class="texto-hero d-flex flex-column justify-content-center align-items-center gap-4">
+                <h1 class="text-white text-center titulo-pagina w-75 mx-auto">Explora la Galaxia: Conoce a los Personajes icónicos de Star Wars</h1>
+                <a class="btn btn-strong rounded" href="#suscripcion">Suscribete</a>
+              </div>
+            </div>
+            
+        </div>
+      </section>
+
+
+    <section id="inicio" class="container-xl">
+      <div class="row align-items-center info">
+        <div class="col-md-5">
+          <h3 class="fs-1 text-center text-md-start">inicio</h3>
+          <p class="text-center text-md-start"><strong>Aqui encontraras los mejor</strong></p>
+          <p>Bienvenido a StarVerse, tu portal definitivo para explorar la galaxia de Star Wars. Aquí encontrarás información detallada sobre tus personajes favoritos, sus historias y mucho más. Únete a nuestra comunidad de fans y descubre todo lo que el universo de Star Wars tiene para ofrecer.</p>
+          <a class="btn btn-strong mb-4 mb-md-0 rounded" href="#">Saber mas</a>
+        </div>
+        <div class="offset-md-1 col-md-6">
+          <img class="img-fluid rounded" src="./src/img/personajes.jpg" alt="inicio">
+        </div>
+      </div> 
+
+    </section> 
+
+    <section id="mural" class="container-fluid hero-full-image">
+
+    </section>
+
+    <section id="historia" class="bg-dark">
+      <div class="container-xl">
+        <div class="row align-items-center info">
+          <div class="col-md-6">
+            <img class="img-fluid rounded" src="./src/img/origen.png" alt="inicio">
+          </div>
+          <div class="offset-md-1 col-md-5 text-white">
+            <h3 class="fs-1 text-center text-md-start mt-4 mt-md-0">Como empezo</h3>
+            <p class="text-center text-md-start"><strong>Pionera en la ciencia ficcion</strong></p>
+            <p>Star Wars comenzó como una idea de George Lucas en los 70s, inspirada en aventuras espaciales y mitos clásicos. La primera película, "Una Nueva Esperanza", se estrenó en 1977, revolucionando el cine con sus efectos especiales y narrativa. Desde entonces, ha crecido con múltiples películas, series, libros y una vasta comunidad de seguidores.</p>
+            <a class="btn btn-strong mb-md-0 rounded" href="#">Saber mas</a>
+          </div>
+        </div> 
+      </div>
+      
+    </section>
+
+    <main id="personajes" class="container-xl carrusel">
+      <div id="carrusel-api" class="carousel slide carrusel-principal d-none d-md-block"> 
+        <div class="d-flex justify-content-between align-items-center py-4">
+          <h3 class="fs-1">Personajes</h3>
+          <div class="d-flex justify-content-end align-items-center gap-2">
+            <button class="btn btn-dark mi-boton-prev rounded">
+              <i class="bi bi-arrow-left-circle-fill fs-3"></i> 
+            </button>
+            <button class="btn btn-dark  mi-boton-next rounded">
+              <i class="bi bi-arrow-right-circle-fill fs-3"></i>
+            </button>
+          </div>
+        </div>
+        <div class="carousel-inner px-2"></div>
+      </div>
+
+      <div id="carrusel-api-mobile" class="carousel slide carrusel-mobile d-md-none my-5"> 
+        <h3 class="fs-1 mb-4 text-center text-md-start">Personajes</h3>
+        
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+          </div>
+        </div>
+        <div class="d-flex justify-content-center align-items-center gap-2 row mt-2">
+          <button class="btn btn-dark mi-boton-prev-mobile rounded col-3">
+            <i class="bi bi-arrow-left-circle-fill fs-3"></i> 
+          </button>
+          <button class="btn btn-dark  mi-boton-next-mobile rounded col-3">
+            <i class="bi bi-arrow-right-circle-fill fs-3"></i>
+          </button>
+        </div>
+        
+      </div>
+      
+    </main>
+
+    
+
+
+
+
+
+    <section id="suscripcion" class="bg-white mb-5">
+      <div class="container-xl bg-dark rounded p-5 border border-2 border-dark suscripcion text-white">
+        <div class="row align-items-center">
+          <div class="col-md-6">
+            <p class="fw-bold rounded-none rounded-md">¡No te pierdas lo que tenemos para ti!</p>
+            <h3>Suscribete para mas</h3>
+            <p>
+              Únete a nuestra comunidad y mantente al día con las últimas noticias, eventos y contenido exclusivo del universo de Star Wars. ¡No te pierdas ninguna actualización y sé el primero en enterarte de todo lo relacionado con tus personajes favoritos!
+            </p>
+          </div>
+          <div class="offset-md-1 col-md-5">
+            <form action="" class="d-flex flex-column gap-3">
+              <input type="email" class="form-control" placeholder="Correo electronico">
+              <input type="submit" class="btn btn-strong rounded" value="Suscribete">
+            </form>
+          </div>
+        </div>
+
+
+      </div>
+    </section>
+
+    <footer class="bg-dark text-white py-3 footer">
+      <div class="container-xl footer-box">
+        <div class="row pb-5">
+          <div class="col-md-2">
+            <h3 class="fs-2 text-center text-md-start">Starverse</h3>
+          </div>
+          <div class="offset-md-1 col-md-7 text-center text-md-start">
+            <div class="row">
+              <div class="col-md-4 mt-5 mt-md-0">
+                <p class="fw-bold fs-5">
+                  Contactanos
+                </p>
+                <div class="d-flex flex-column gap-2">
+                  <a href="#">Nuestro WhatsApp</a>
+                  <a href="#">Asistenos</a>
+                  <a href="#">Consultas</a>
+                </div>
+              </div>
+              <div class="col-md-4 mt-5 mt-md-0">
+                <p class="fw-bold fs-5">
+                  Recursos
+                </p>
+                <div class="d-flex flex-column gap-2">
+                  <a href="#">Guías de personajes</a>
+                  <a href="#">Guias de Naves</a>
+                  <a href="#">Cartelera completa</a>
+                </div>
+              </div>
+              <div class="col-md-4 mt-5 mt-md-0">
+                 <p class="fw-bold fs-5">
+                  Nosotros
+                </p>
+                <div class="d-flex flex-column gap-2">
+                  <a href="#">Nuestro inicio</a>
+                  <a href="#">Motivacion</a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-2 d-flex flex-column justify-content-center justify-content-md-start align-items-center mt-5 mt-md-0">
+            <p class="m-0">Siguenos en:</p>
+            <div class="iconos-footer d-flex gap-3 mt-1">
+              <a class="text-decoration-none" href="#">
+                <i class="bi bi-twitter text-white fs-2 ico-social"></i>
+              </a>
+              <a class="text-decoration-none"  href="#">
+                <i class="bi bi-facebook text-white fs-2 ico-social"></i>
+              </a>
+              <a class="text-decoration-none"  href="#">
+                <i class="bi bi-instagram text-white fs-2 ico-social"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+
+
+
+        <div class="row mt-4"></div>
+        <hr>
+          <div class="col text-center py-2">
+            <p class="m-0">&copy; 2023 StarVerse. Todos los derechos reservados.</p>
+          </div>
+        </div>
+      </div>
+
+     
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script type="module" src="./src/js/app.js"></script>
+</body>
+</html>

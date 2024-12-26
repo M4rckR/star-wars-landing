@@ -1,0 +1,18 @@
+@use '../custom' as *;
+@use '../mixins' as m;
+
+.hero {
+    padding-top: 5.2rem;
+    background-image: url('../img/hero-image.png');
+    background-size: cover;
+    background-position: right center;
+    background-repeat: no-repeat;
+    height: 100vh;
+
+    .imagen-hero {
+        width: 50rem;
+        object-fit: cover;
+        
+    }
+
+}
